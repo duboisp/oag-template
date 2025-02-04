@@ -1,8 +1,10 @@
 ---
 layout: core
 ---
+
 {%- include variable-core.liquid -%}
 <main property="mainContentOfPage" resource="#wb-main" typeof="WebPageElement">
-{{ content }}
-{% include page-details/footer.html addContainer=true %}
+	<h1 class="wb-inv" property="name" id="wb-cont">{{ page.title }}</h1>
+	{{ content }}
+	{% include page-details/footer.html addContainer=true %}
 </main>

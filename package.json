@@ -6,22 +6,37 @@
 	"main": "index.html",
 	"scripts": {
 		"lint:css": "stylelint '**/*.css'",
-		"format:js": "prettier --write '**/*.js'"
- 
-	},
-	"dependencies": {
-		"bootstrap-sass": "3.4.1",
-		"@wet-boew/gcweb": "^11.0.0"
+		"format:js": "prettier --write '**/*.js'",
+		"postbuild": "prettier --write _site/*.html",
+		"build-css": "postcss src/assets/css/oag.css --use postcss-nested -o dist/assets/css/oag.min.css"
 	},
 	"devDependencies": {
-	  "autoprefixer": "^10.4.14",
-	  "postcss-cli": "^10.1.0",
-	  "stylelint": "^15.10.3",
-	  "prettier": "^3.0.3"
+		"autoprefixer": "^10.4.20",
+		"bower": "^1.8.14",
+		"cssnano": "^7.0.6",
+		"grunt": "^1.6.1",
+		"grunt-banner": "^0.6.0",
+		"grunt-contrib-clean": "^2.0.1",
+		"grunt-contrib-copy": "^1.0.0",
+		"grunt-contrib-cssmin": "^5.0.0",
+		"grunt-contrib-jshint": "^3.2.0",
+		"grunt-contrib-sass": "^2.0.0",
+		"grunt-contrib-uglify": "^5.2.2",
+		"grunt-contrib-watch": "^1.1.0",
+		"grunt-eslint": "^25.0.0",
+		"grunt-htmllint": "^0.3.0",
+		"grunt-postcss": "^0.9.0",
+		"grunt-shell": "^4.0.0",
+		"load-grunt-tasks": "^5.1.0",
+		"postcss": "^8.5.2",
+		"postcss-cli": "^10.1.0",
+		"postcss-custom-properties": "^14.0.4",
+		"postcss-nested": "^7.0.2",
+		"stylelint": "^15.10.3"
 	},
 	"browserslist": [
-	  "defaults",
-	  "not IE 11"
+		"defaults",
+		"not IE 11"
 	],
 	"license": "MIT"
-  }
+}

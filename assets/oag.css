@@ -112,6 +112,10 @@
 			float: none;
 		}
 	}
+
+	input[type=date].form-control {
+		line-height: 1.4375;
+	}
 	
 	/**********
 		Header

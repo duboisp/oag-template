@@ -42,20 +42,7 @@ layout: no-container
 							<label for="customSearchUI">Search Petition Title</label>
 							<input type="search" class="form-control full-width" id="customSearchUI" data-wbfltrid="filteredPetitionsList" aria-controls="filteredPetitionsList" placeholder="Search...">
 						</div>
-						<hr>
-
-						<!-- Petition Year -->
-						<div class="form-group">
-						<label for="petitionYear">Year</label>
-						<select id="petitionYear" name="petitionYear" class="form-control full-width wb-tagfilter-ctrl" >
-							<option value="">All</option>
-							<option value="year__2025">2025</option>
-							<option value="year__2024">2024</option>
-							<option value="year__2023">2023</option>
-							<option value="year__2022">2022</option>
-							<option value="year__2021">2021</option>
-						</select>
-						</div>
+						<hr>						
 
 						<!-- Federal Organization -->
 						<div class="form-group">
@@ -99,6 +86,15 @@ layout: no-container
 								<option value="NU">Nunavut</option>
 								<option value="YT">Yukon</option>
 							</select>
+						</div>
+						<!-- Petition Date -->
+						<div class="form-group">
+							<label for="dateRangeStart">Start Date</label>
+							<input type="date" id="dateRangeStart" name="startDate" class="wb-tagfilter-ctrl form-control full-width">
+						</div>
+						<div class="form-group">
+							<label for="dateRangeEnd">End Date</label>
+							<input type="date" id="dateRangeEnd" name="endDate" class="wb-tagfilter-ctrl form-control full-width">
 						</div>
 					</details>
 					<article class="oag-card bg-light mb-3">

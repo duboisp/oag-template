@@ -745,6 +745,12 @@
 			font-size: 1.5em;
 			padding: 0 0 1.5em;
 		}
+		.oag-right-content .image {
+			margin-bottom: 20px;
+			img {
+				width: 100%;
+			}					
+		}
 	}
 
 	/**********

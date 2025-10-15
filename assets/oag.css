@@ -354,17 +354,17 @@
 			color: #4B5B62;
 		}
 
-		&.label-primary, &[data-report-type='auditor-general-report'] {
+		&.label-primary, &[data-report-type='auditor-general-reports'] {
 			background: var(--oag-brick-red);
 			color: #fff;
 		}
 
-		&[data-report-type='commissioner-of-the-environment-and-sustainable-development-report'] {
+		&[data-report-type='commissioner-of-the-environment-and-sustainable-development-reports'] {
 			background: var(--oag-light-green);
 			color: #fff;
 		}
 
-		&[data-report-type='northern-legislative-assembly-report'] {
+		&[data-report-type='northern-legislative-assembly-reports'] {
 			background: var(--oag-petrol-green);
 			color: #fff;
 		}

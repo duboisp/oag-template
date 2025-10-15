@@ -34,22 +34,22 @@ layout: default
 							<ul class="list-unstyled mb-0">
 								<li class="checkbox">
 									<label>
-										<input type="checkbox" name="report_type" class="wb-tagfilter-ctrl" value="type__ag_reports"> Auditor General Reports
+										<input type="checkbox" name="report_type" class="wb-tagfilter-ctrl" value="auditor-general-report"> Auditor General Reports
 									</label>
 								</li>
 								<li class="checkbox">
 									<label>
-										<input type="checkbox" name="report_type" class="wb-tagfilter-ctrl" value="type__cesd_reports"> Commissioner of the Environment and Sustainable Development Reports
+										<input type="checkbox" name="report_type" class="wb-tagfilter-ctrl" value="commissioner-of-the-environment-and-sustainable-development-report"> Commissioner of the Environment and Sustainable Development Reports
 									</label>
 								</li>
 								<li class="checkbox">
 									<label>
-										<input type="checkbox" name="report_type" class="wb-tagfilter-ctrl" value="type__nla_reports"> Northern Legislative Assemblies Reports
+										<input type="checkbox" name="report_type" class="wb-tagfilter-ctrl" value="northern-legislative-assembly-report"> Northern Legislative Assemblies Reports
 									</label>
 								</li>
 								<li class="checkbox">
 									<label>
-										<input type="checkbox" name="report_type" class="wb-tagfilter-ctrl" value="type__cc_reports"> Special Examinations of Crown Corporations
+										<input type="checkbox" name="report_type" class="wb-tagfilter-ctrl" value="special-examinations-of-crown-corporations"> Special Examinations of Crown Corporations
 									</label>
 								</li>
 							</ul>
@@ -109,17 +109,17 @@ layout: default
 						"mapping": [
 							
 							{ "selector": ".listing-card", "attr": "data-wb-tags", "value": "/tags" },
-							{ "selector": ".label", "attr": "data-report-type", "value": "/type" },
-							{ "selector": ".report-type", "value": "/type" },
+							{ "selector": ".label", "attr": "data-report-type", "value": "/tag_key" },
+							{ "selector": ".label", "value": "/tag_title" },
 							{ "selector": "h3 a", "value": "/title" }
 						]
 					}'>
 					<template>
 						<div class="col-xs-12 col-md-6 listing-card" data-wb-tags="">
-							<article class="oag-card oag-heading-as-body bg-light h-100">
-								<img src="https://dummyimage.com/300x300" alt="">
+							<article class="oag-card oag-heading-as-body bg-light h-100 mb-4">
+								<img src="https://dummyimage.com/300x300" alt="oag-card-image">
 								<div>
-									<span class="label label-default" data-report-type=""><span class="report-type"></span> Reports</span>
+									<span class="label label-default" data-report-type=""></span>
 								</div>
 								<h3 class="mb-0 mt-2"><a href="audit-report.html" class="stretched-link mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</a></h3>
 							</article>

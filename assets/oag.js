@@ -18,6 +18,7 @@ if (reportTypeLabel && reportHeading) {
 	const p = document.createElement('p'),
 		span = document.createElement('span');
 	span.className = 'label label-primary';
+	span.setAttribute('data-report-type', reportTypeLabel.getAttribute('data-report-type-key') || 'auditor-general-report'); // Default to 'auditor-general-report' if not set
 	p.className = 'mb-4'; // Use mb-4 for margin-bottom
 	span.textContent = reportTypeLabel.textContent;
 	p.appendChild(span);

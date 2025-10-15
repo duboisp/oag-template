@@ -40,8 +40,10 @@
 	--oag-default-border-color: #908F84;
 	
 	/* Report type label colors */
-	--oag-light-green: #6d8b62;
-	--oag-turquoise: #26615f;
+	--oag-light-green: #89AF7C;
+	--oag-petrol-green: #26615F;
+	--oag-brick-red: #852828;
+	--oag-golden-sand: #E9C267;
 }
 
 /* Wrapper class added to facilitate overriding the GCWeb style and avoid race condition conflict*/
@@ -352,18 +354,23 @@
 			color: #4B5B62;
 		}
 
-		&.label-primary, &[data-report-type='AG'] {
-			background: var(--oag-primary-color);
+		&.label-primary, &[data-report-type='auditor-general-report'] {
+			background: var(--oag-brick-red);
 			color: #fff;
 		}
 
-		&[data-report-type='CESD'] {
+		&[data-report-type='commissioner-of-the-environment-and-sustainable-development-report'] {
 			background: var(--oag-light-green);
 			color: #fff;
 		}
 
-		&[data-report-type='NLA'] {
-			background: var(--oag-turquoise);
+		&[data-report-type='northern-legislative-assembly-report'] {
+			background: var(--oag-petrol-green);
+			color: #fff;
+		}
+
+		&[data-report-type='special-examinations-of-crown-corporations'] {
+			background: var(--oag-golden-sand);
 			color: #fff;
 		}
 
@@ -656,7 +663,6 @@
 	.oag-shadow {
 		box-shadow: var(--oag-shadow);
 	}
-
 	/**********
 	Home Page
 	**********/

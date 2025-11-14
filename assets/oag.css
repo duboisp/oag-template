@@ -42,7 +42,6 @@
 	/* Report type label colors */
 	--oag-light-green: #89AF7C;
 	--oag-petrol-green: #26615F;
-	--oag-brick-red: #852828;
 	--oag-golden-sand: #E9C267;
 }
 
@@ -296,7 +295,7 @@
 		}
 
 		&.btn-link {
-			color: var(--oag-body-color);
+			color: var(--oag-primary-color);
 			background: linear-gradient(to right, var(--oag-hover-color) 0%, var(--oag-hover-color) 100%);
 			background-size: 0% 100%;
 			background-repeat: no-repeat;
@@ -355,7 +354,7 @@
 		}
 
 		&.label-primary, &[data-report-type='auditor-general-reports'] {
-			background: var(--oag-brick-red);
+			background: var(--oag-primary-color);
 			color: #fff;
 		}
 
@@ -364,7 +363,7 @@
 			color: #fff;
 		}
 
-		&[data-report-type='northern-legislative-assembly-reports'] {
+		&[data-report-type='northern-legislative-assemblies-reports'] {
 			background: var(--oag-petrol-green);
 			color: #fff;
 		}

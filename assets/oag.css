@@ -40,7 +40,7 @@
 	--oag-default-border-color: #908F84;
 	
 	/* Report type label colors */
-	--oag-light-green: #89AF7C;
+	--oag-light-green: #3f5530;
 	--oag-petrol-green: #26615F;
 	--oag-brick-red: #852828;
 	--oag-golden-sand: #E9C267;
@@ -294,24 +294,6 @@
 				color: var(--oag-body-color);
 			}
 		}
-
-		&.btn-link {
-			color: var(--oag-body-color);
-			background: linear-gradient(to right, var(--oag-hover-color) 0%, var(--oag-hover-color) 100%);
-			background-size: 0% 100%;
-			background-repeat: no-repeat;
-			transition: background-size 0.3s ease-in-out;
-	
-			&:hover {
-				background-size: 100% 100%;
-				text-decoration: none;
-			}
-	
-			&:not(:hover) {
-				background-size: 0% 100%;
-				transition: none;
-			}
-		}
 	}
 
 
@@ -354,7 +336,11 @@
 			color: #4B5B62;
 		}
 
-		&.label-primary, &[data-report-type='auditor-general-reports'] {
+		&.label-primary {
+			background: var(--oag-primary-color);
+			color: #fff;
+		}
+		&[data-report-type='auditor-general-reports'] {
 			background: var(--oag-brick-red);
 			color: #fff;
 		}
@@ -371,7 +357,7 @@
 
 		&[data-report-type='special-examinations-of-crown-corporations'] {
 			background: var(--oag-golden-sand);
-			color: #fff;
+			color: #333;
 		}
 
 		~ time {
@@ -396,6 +382,7 @@
 				display: block;
 				left: 0;
 				padding: 0;
+				margin-left:0;
 				text-align: left;				
 				
 				a {
@@ -516,6 +503,24 @@
 
 		&.bg-light:has(.stretched-link):hover {
 			box-shadow: var(--oag-shadow-lg);
+		}
+
+		.btn-link {
+			color: var(--oag-primary-color);
+			background: linear-gradient(to right, var(--oag-hover-color) 0%, var(--oag-hover-color) 100%);
+			background-size: 0% 100%;
+			background-repeat: no-repeat;
+			transition: background-size 0.3s ease-in-out;
+	
+			&:hover {
+				background-size: 100% 100%;
+				text-decoration: none;
+			}
+	
+			&:not(:hover) {
+				background-size: 0% 100%;
+				transition: none;
+			}
 		}		
 	}
 

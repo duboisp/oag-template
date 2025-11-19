@@ -1,91 +1,91 @@
 {
     "events": [
         {
-            "tags": "type__media_advisory year__2025 topic__auditor_general_reports",
+            "tags": "type__media_advisory year__2025 auditor-general-reports",
             "title": "Housing for Canadian Armed Forces",
             "year": "2025",
             "date": "June 27, 2025",
             "type": "Media Advisory"
         },
         {
-            "tags": "type__opening_statement year__2025 topic__northern_legislative_assemblies_reports",
+            "tags": "type__opening_statement year__2025 northern-legislative-assemblies-reports",
             "title": "Lessons Learned from Canada's Record on Sustainable Development",
             "year": "2025",
             "date": "May 15, 2025",
             "type": "Opening Statement"
         },
         {
-            "tags": "type__news_release year__2024 topic__northern_legislative_assemblies_reports",
+            "tags": "type__news_release year__2024 northern-legislative-assemblies-reports",
             "title": "Child and Family Services",
             "year": "2024",
             "date": "April 1, 2024",
             "type": "News Releases"
         },
         {
-            "tags": "type__news_release year__2023 topic__northern_legislative_assemblies_reports",
+            "tags": "type__news_release year__2023 northern-legislative-assemblies-reports",
             "title": "Child and Family Services",
             "year": "2023",
             "date": "February 1, 2023",
             "type": "News Releases"
         },
         {
-            "tags": "type__news_release year__2023 topic__northern_legislative_assemblies_reports",
+            "tags": "type__news_release year__2023 northern-legislative-assemblies-reports",
             "title": "Child and Family Services",
             "year": "2023",
             "date": "December 1, 2023",
             "type": "News Releases"
         },
         {
-            "tags": "type__opening_statement year__2025 topic__northern_legislative_assemblies_reports",
+            "tags": "type__opening_statement year__2025 northern-legislative-assemblies-reports",
             "title": "Lesons Learned from Canada's Record on Sustainable Development",
             "year": "2024",
             "date": "April 5, 2024",
             "type": "Opening Statement"
         },
         {
-            "tags": "type__opening_statement year__2025 topic__crown_corporations",
+            "tags": "type__opening_statement year__2025 special-examinations-crown-corporations",
             "title": "Lessons Learned from Canada's Record on Sustainable Development",
             "year": "2025",
             "date": "May 5, 2025",
             "type": "Opening Statement"
         },
         {
-            "tags": "type__opening_statement year__2025 topic__crown_corporations",
+            "tags": "type__opening_statement year__2025 special-examinations-crown-corporations",
             "title": "Lessons Learned from Canada's Record on Sustainable Development",
             "year": "2025",
             "date": "April 5, 2025",
             "type": "Opening Statement"
         },
         {
-            "tags": "type__media_advisory year__2022 topic__commissioner",
+            "tags": "type__media_advisory year__2022 commissioner-of-the-environment-and-sustainable-development-reports",
             "title": "Housing for Canadian Armed Forces",
             "year": "2022",
             "date": "February 1, 2022",
             "type": "Media Advisory"
         },
         {
-            "tags": "type__media_advisory year__2021 topic__auditor_general_reports",
+            "tags": "type__media_advisory year__2021 auditor-general-reports",
             "title": "Housing for Canadian Armed Forces",
             "year": "2021",
             "date": "October 1, 2021",
             "type": "Media Advisory"
         },
         {
-            "tags": "type__media_advisory year__2020 topic__auditor_general_reports",
+            "tags": "type__media_advisory year__2020 auditor-general-reports",
             "title": "Housing for Canadian Armed Forces",
             "year": "2020",
             "date": "September 1, 2020",
             "type": "Media Advisory"
         },
         {
-            "tags": "type__media_advisory year__2022 topic__auditor_general_reports",
+            "tags": "type__media_advisory year__2022 auditor-general-reports",
             "title": "Housing for Canadian Armed Forces",
             "year": "2022",
             "date": "August 1, 2022",
             "type": "Media Advisory"
         },
         {
-            "tags": "type__media_advisory year__2023 topic__auditor_general_reports",
+            "tags": "type__media_advisory year__2023 auditor-general-reports",
             "title": "Housing for Canadian Armed Forces",
             "year": "2023",
             "date": "October 1, 2023",

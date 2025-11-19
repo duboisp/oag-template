@@ -103,7 +103,19 @@ layout: no-container
 						</div>
 						<!-- Type of articles -->
 						<div class="form-group mb-0">
-							<fieldset>
+							<fieldset data-wb-urlmapping='{
+								"at=media_advisory": {
+									"action": "selectInput",
+									"value": "type__media_advisory"
+								},
+								"at=news_release": {
+									"action": "selectInput",
+									"value": "type__news_release"
+								},
+								"at=opening_statement": {
+									"action": "selectInput",
+									"value": "type__opening_statement"
+								}}'>
 								<legend>Type of Article</legend>
 								<ul class="list-unstyled mb-0">
 									<li class="checkbox">
@@ -127,18 +139,54 @@ layout: no-container
 						<hr>
 						<!-- Topic -->
 						<div class="form-group">
-							<label for="topicList">Report type</label>
-							<select id="topicList" name="report_type" class="form-control full-width wb-tagfilter-ctrl">
+							<label for="reportType">Report type</label>
+							<select id="reportType" name="report_type" class="form-control full-width wb-tagfilter-ctrl" data-wb-urlmapping='{
+								"rt=ag": {
+									"action": "selectInput",
+									"value": "auditor-general-reports"
+								},
+								"rt=cesd": {
+									"action": "selectInput",
+									"value": "commissioner-of-the-environment-and-sustainable-development-reports"
+								},
+								"rt=nla": {
+									"action": "selectInput",
+									"value": "northern-legislative-assemblies-reports"
+								},
+								"rt=secc": {
+									"action": "selectInput",
+									"value": "special-examinations-crown-corporations"
+								}}' >
 								<option value="">All</option>
-								<option value="topic__auditor_general_reports">Auditor General Reports</option>
-								<option value="topic__commissioner">Commissioner of the Environment and Sustainable Development Reports</option>
-								<option value="topic__northern_legislative_assemblies_reports">Northern Legislative Assemblies Reports</option>
-								<option value="topic__crown_corporations">Special Examinations of Crown Corporations</option>
+								<option value="auditor-general-reports">Auditor General Reports</option>
+								<option value="commissioner-of-the-environment-and-sustainable-development-reports">Commissioner of the Environment and Sustainable Development Reports</option>
+								<option value="northern-legislative-assemblies-reports">Northern Legislative Assemblies Reports</option>
+								<option value="special-examinations-crown-corporations">Special Examinations of Crown Corporations</option>
 							</select>
 						</div>
 						<div class="form-group mb-0">
 							<label for="releaseYear">Release Year</label>
-							<select id="releaseYear" name="releaseYear" class="form-control full-width wb-tagfilter-ctrl">
+							<select id="releaseYear" name="releaseYear" class="form-control full-width wb-tagfilter-ctrl" data-wb-urlmapping='{
+								"y=2025": {
+									"action": "selectInput",
+									"value": "year__2025"
+								},
+								"y=2024": {
+									"action": "selectInput",
+									"value": "year__2024"
+								},
+								"y=2023": {
+									"action": "selectInput",
+									"value": "year__2023"
+								},
+								"y=2022": {
+									"action": "selectInput",
+									"value": "year__2022"
+								},
+								"y=2021": {
+									"action": "selectInput",
+									"value": "year__2021"
+								}}'>
 								<option value="">All</option>
 								<option value="year__2025">2025</option>
 								<option value="year__2024">2024</option>

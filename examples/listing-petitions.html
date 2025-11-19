@@ -70,7 +70,59 @@ layout: no-container
 						<!-- Province -->
 						<div class="form-group">
 							<label for="province">Province/Territory</label>
-							<select id="province" name="province" class="form-control full-width wb-tagfilter-ctrl" >
+							<select id="province" name="province" class="form-control full-width wb-tagfilter-ctrl" data-wb-urlmapping='{
+								"pr=ab": {
+									"action": "selectInput",
+									"value": "AB"
+								},
+								"pr=bc": {
+									"action": "selectInput",
+									"value": "BC"
+								},
+								"pr=mb": {
+									"action": "selectInput",
+									"value": "MB"
+								},
+								"pr=nb": {
+									"action": "selectInput",
+									"value": "NB"
+								},
+								"pr=nl": {
+									"action": "selectInput",
+									"value": "NL"
+								},
+								"pr=ns": {
+									"action": "selectInput",
+									"value": "NS"
+								},
+								"pr=on": {
+									"action": "selectInput",
+									"value": "ON"
+								},
+								"pr=pe": {
+									"action": "selectInput",
+									"value": "PE"
+								},
+								"pr=qc": {
+									"action": "selectInput",
+									"value": "QC"
+								},
+								"pr=sk": {
+									"action": "selectInput",
+									"value": "SK"
+								},
+								"pr=nt": {
+									"action": "selectInput",
+									"value": "NT"
+								},
+								"pr=nu": {
+									"action": "selectInput",
+									"value": "NU"
+								},
+								"pr=yt": {
+									"action": "selectInput",
+									"value": "YT"
+								}}'>
 								<option value="">All</option>								
 								<option value="AB">Alberta</option>
 								<option value="BC">British Columbia</option>
@@ -87,15 +139,39 @@ layout: no-container
 								<option value="YT">Yukon</option>
 							</select>
 						</div>
-						<!-- Petition Date -->
-						<div class="form-group">
-							<label for="dateRangeStart">Start Date</label>
-							<input type="date" id="dateRangeStart" name="startDate" class="wb-tagfilter-ctrl form-control full-width">
+						<!-- Petition release year -->
+						<div class="form-group mb-0 mt-3">
+							<label for="releaseYear">Release year</label>
+							<select id="releaseYear" name="releaseYear" class="form-control full-width wb-tagfilter-ctrl" data-wb-urlmapping='{ 
+								"y=2025" : {
+									"action": "selectInput",
+									"value": "year__2025"
+								},
+								"y=2024" : {
+									"action": "selectInput",
+									"value": "year__2024"
+								},
+								"y=2023" : {
+									"action": "selectInput",
+									"value": "year__2023"
+								},
+								"y=2022" : {
+									"action": "selectInput",
+									"value": "year__2022"
+								},
+								"y=2021" : {
+									"action": "selectInput",
+									"value": "year__2021"
+								}}' >
+								<option value>All</option>
+								<option value="year__2025">2025</option>
+								<option value="year__2024">2024</option>
+								<option value="year__2023">2023</option>
+								<option value="year__2022">2022</option>
+								<option value="year__2021">2021</option>
+							</select>
 						</div>
-						<div class="form-group">
-							<label for="dateRangeEnd">End Date</label>
-							<input type="date" id="dateRangeEnd" name="endDate" class="wb-tagfilter-ctrl form-control full-width">
-						</div>
+						
 					</details>
 					<article class="oag-card bg-light mb-3">
 						<h3 class="h6">Request for Copies of Petitions</h3>

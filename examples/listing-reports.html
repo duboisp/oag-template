@@ -29,7 +29,24 @@ layout: default
 					</div>
 					<!-- Type of reports -->
 					<div class="form-group mb-0">
-						<fieldset>
+						<fieldset data-wb-urlmapping='{
+							"rt=ag": {
+								"action": "selectInput",
+								"value": "auditor-general-reports"
+								},
+							"rt=cesd": {
+								"action": "selectInput",
+								"value": "commissioner-of-the-environment-and-sustainable-development-reports"
+							},
+							"rt=nla": {
+								"action": "selectInput",
+								"value": "northern-legislative-assemblies-reports"
+							},
+							"rt=secc": {
+								"action": "selectInput",
+								"value": "special-examinations-of-crown-corporations"
+							}
+						}'>
 							<legend>Type of Report</legend>
 							<ul class="list-unstyled mb-0">
 								<li class="checkbox">
@@ -44,7 +61,7 @@ layout: default
 								</li>
 								<li class="checkbox">
 									<label>
-										<input type="checkbox" name="report_type" class="wb-tagfilter-ctrl" value="northern-legislative-assembly-reports"> Northern Legislative Assemblies Reports
+										<input type="checkbox" name="report_type" class="wb-tagfilter-ctrl" value="northern-legislative-assemblies-reports"> Northern Legislative Assemblies Reports
 									</label>
 								</li>
 								<li class="checkbox">
@@ -52,7 +69,7 @@ layout: default
 										<input type="checkbox" name="report_type" class="wb-tagfilter-ctrl" value="special-examinations-of-crown-corporations"> Special Examinations of Crown Corporations
 									</label>
 								</li>
-							</ul>
+							</ul>							
 						</fieldset>
 					</div>
 					<hr>
@@ -69,7 +86,28 @@ layout: default
 					</div>
 					<div class="form-group mb-0 mt-3">
 						<label for="releaseYear">Release Year</label>
-						<select id="releaseYear" name="releaseYear" class="form-control full-width wb-tagfilter-ctrl">
+						<select id="releaseYear" name="releaseYear" class="form-control full-width wb-tagfilter-ctrl" data-wb-urlmapping='{
+							"y=2025": {
+								"action": "selectInput",
+								"value": "year__2025"
+							},
+							"y=2024": {
+								"action": "selectInput",
+								"value": "year__2024"
+							},
+							"y=2023": {
+								"action": "selectInput",
+								"value": "year__2023"
+							},
+							"y=2022": {
+								"action": "selectInput",
+								"value": "year__2022"
+							},
+							"y=2021": {
+								"action": "selectInput",
+								"value": "year__2021"
+							}
+						}'>
 							<option value="">All</option>
 							<option value="year__2025">2025</option>
 							<option value="year__2024">2024</option>

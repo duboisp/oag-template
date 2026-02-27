@@ -744,6 +744,10 @@
 	.cmp-container .title:first-child h2:first-of-type {
 			margin-top: 0;
 	}
+	main .col-xs-12.col-lg-12 {
+		clear: both;
+		float: none;
+	}
 	
 
 	/**********

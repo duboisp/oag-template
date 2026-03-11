@@ -234,13 +234,13 @@
 	h1, .h1, h2, .h2, h3, .h3  {
 		color: var(--oag-primary-color);
 		font-family: var(--oag-heading-font);
-		font-weight: lighter;
+		font-weight: 600;
 	}
 
 	h4, .h4, h5, .h5, h6, .h6  {
 		color: var(--oag-body-color);
 		font-family: var(--oag-body-font);
-		font-weight: bold;
+		font-weight: 600;
 	}
 
 	h2, .h2 {

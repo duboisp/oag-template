@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
 
 /**********
 	CSS Variables defining default OAG values 
@@ -20,7 +21,7 @@
 	--oag-light-bg-color: #f4f4ee;
 	
 	/* Heading font family */
-	--oag-heading-font: Georgia, Cambria, 'Times New Roman', Times, serif;
+	--oag-heading-font: "Noto Serif", Georgia, Cambria, 'Times New Roman', Times, serif;
 	
 	/* Body font family */
 	--oag-body-font: "Noto Sans",sans-serif;

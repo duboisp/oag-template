@@ -6,16 +6,16 @@
 **********/ 
 :root {
 	/* Primary color used throughout the theme */
-	--oag-primary-color: #4C0C31;
+	--oag-primary-color: #4a1031;
 
 	/* Color for body */
-	--oag-body-color: #2d3237;
+	--oag-body-color: #2c3136;
 
 	/* Color for links */
-	--oag-secondary-color: #803d2d;
+	--oag-secondary-color: #833827;
 	
 	/* Color for hover effects */
-	--oag-hover-color: #EBD8AA;
+	--oag-hover-color: #ead7a9;
 	
 	/* Color for light-background */
 	--oag-light-bg-color: #f4f4ee;
@@ -24,7 +24,7 @@
 	--oag-heading-font: "Noto Serif", Georgia, Cambria, 'Times New Roman', Times, serif;
 	
 	/* Body font family */
-	--oag-body-font: "Noto Sans",sans-serif;
+	--oag-body-font: "Noto Sans", sans-serif;
 	
 	/* Border radius for labels and small images*/
 	--oag-rds-sm: 10px 0px 10px 0px;
@@ -41,10 +41,10 @@
 	--oag-default-border-color: #908F84;
 	
 	/* Report type label colors */
-	--oag-light-green: #3f5530;
-	--oag-petrol-green: #26615F;
-	--oag-brick-red: #852828;
-	--oag-golden-sand: #E9C267;
+	--oag-light-green: #5e7a57;
+	--oag-petrol-green: #24615f;
+	--oag-brick-red: #833827;
+	--oag-golden-sand: #e8c166;
 }
 
 /* Wrapper class added to facilitate overriding the GCWeb style and avoid race condition conflict*/
@@ -223,7 +223,7 @@
 	**********/ 
 	#wb-info {
 		.gc-main-footer {
-			background: #2d3237;
+			background: #2c3136;
 		}
 	}
 
@@ -237,15 +237,42 @@
 		font-weight: 600;
 	}
 
+		h1, .h1 {
+		  font-size: 44px; /* 33pt */
+		  color: #3b0d27; } /* DARK SHADE */
+
+		h2, .h2 {
+		  font-size: 36px; /* 27pt */
+		  color: #4a1031; } /* BASE COLOR */
+
+		h3, .h3 {
+		  font-size: 30px; /* 22pt */
+		  color: #2c0a1d; } /* DARKER SHADE */
+
+
 	h4, .h4, h5, .h5, h6, .h6  {
 		color: var(--oag-body-color);
 		font-family: var(--oag-body-font);
 		font-weight: 600;
 	}
 
-	h2, .h2 {
-		color: var(--oag-body-color);
-	}
+		h4, .h4 {
+		  font-size: 24px; } /* 18pt */
+		  
+		h5, .h5 {
+		  font-size: 20px; } /* 15pt */
+
+		h6, .h6 {
+		  font-size: 18px; } /* 13pt */
+
+		@media screen and (max-width: 768px) {
+			h1 {
+				font-size: 36px; }
+			h2 {
+				font-size: 32px; }
+			h3 {
+				font-size: 28px; }
+		}
 	
 	h1#wb-cont, hgroup#wb-cont h1 {
 		border: none;
@@ -645,7 +672,7 @@
 	}
 
 	.text-white {
-		color: #fff!important;
+		color: #fff !important;
 	}
 
 	.fnt-hdng {
@@ -671,6 +698,8 @@
 	.oag-shadow {
 		box-shadow: var(--oag-shadow);
 	}
+
+
 	/**********
 	Home Page
 	**********/

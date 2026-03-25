@@ -9,46 +9,57 @@ layout: default
 ---
 
 <section class="alert alert-info">
-	<h2 class="h5">Note</h2>
+	<h2 class="oag-timber-wolf" class="h5">Note</h2>
 	<p>This page showcases examples of CSS classes, components, and other elements from GCWeb that have been customized or overwritten for this project. These modifications were made to better align with the specific requirements and design goals of the project.</p>
 </section>
 <p>For a complete list of features, please visit the <a href="https://wet-boew.github.io/GCWeb/index-en.html">GCWeb website</a>. Refer to the documentation for detailed information on each change.</p>
 
-<h2>On this page</h2>
-<ul>
-	<li><a href="#scaffolding">Scaffolding</a></li>
-	<li><a href="#buttons">Buttons</a></li>
-	<li><a href="#alerts">Notices (was alerts)</a></li>
-	<li><a href="#labels">Labels</a></li>
-	<li><a href="#tabbed-interface">Tabbed interface - vertical variant</a></li>
-	<li><a href="#cards">Cards</a></li>
-	<li><a href="#pagination">Pagination</a></li>
-	<li><a href="#download">Download link</a></li>
-	<li><a href="#existing-utilities">Existing utilities</a></li>
-	<li><a href="#oag-utilities">OAG specific utilities</a></li>
-</ul>
 
-<h2 id="scaffolding">Scaffolding</h2>
-
-<section>
-	<h3>Headings</h3>
-	<section>
-		<h2>Heading h2</h2>
-		<section>
-			<h3>Heading h3</h3>
-			<section>
-				<h4>Heading h4</h4>
-				<section>
-					<h5>Heading h5</h5>
-					<section>
-						<h6>Heading h6</h6>
-						<p>Paragraph - default appearance with <a href="#">a link</a></p>
-					</section>
-				</section>
-			</section>
-		</section>
-	</section>
+<section class="panel panel-default mrgn-tp-lg">
+	<header class="panel-heading">
+		<h4 class="panel-title">On this page</h4>
+	</header>
+	<div class="panel-body">
+		<ul>
+			<li><a href="#scaffolding">Scaffolding</a> <span class="label label-warning small">Updated</span></li>
+			<li><a href="#colors">Colors</a> <span class="label label-danger small">New</span></li>
+			<li><a href="#table">Table</a> <span class="label label-danger small">New</span></li>
+			<li><a href="#toggle">Accordion/Toggle</a> <span class="label label-warning small">Updated</span></li>
+			<li><a href="#well">Well</a> <span class="label label-danger small">New</span></li>
+			<li><a href="#panel">Panel</a> <span class="label label-danger small">New</span></li>
+			<li><a href="#buttons">Buttons</a></li>
+			<li><a href="#alerts">Notices (was alerts)</a></li>
+			<li><a href="#labels">Labels</a> <span class="label label-warning small">Updated</span></li>
+			<li><a href="#tabbed-interface">Tabbed interface - vertical variant</a></li>
+			<li><a href="#cards">Cards</a></li>
+			<li><a href="#pagination">Pagination</a> <span class="label label-warning small">Updated</span></li>
+			<li><a href="#download">Download link</a></li>
+			<li><a href="#existing-utilities">Existing utilities</a></li>
+			<li><a href="#oag-utilities">OAG specific utilities</a></li>
+		</ul>
+	</div>
 </section>
+
+
+<h2 class="oag-timber-wolf" id="scaffolding">Scaffolding</h2>
+<section>
+<h1>Heading&nbsp;1&nbsp;| 33pt = 44px—Trillium (Dark Shade)</h1>
+<h2>Heading&nbsp;2&nbsp;| 27pt = 36px—Trillium (Base Color)</h2>
+<h3>Heading&nbsp;3&nbsp;| 22pt = 30px—Trillium (darker Shade)</h3>
+<h4>Heading&nbsp;4&nbsp;| 18pt = 24px—Black</h4>
+<h5>Heading&nbsp;5&nbsp;| 15pt = 20px—Black</h5>
+<h6>Heading h6</h6>
+<p>Paragraph—default appearance with <a href="#">a link</a>. The logic behind the sizing of the h5 going up to h1 is an increment, starting at 15pt, of +3pt, +4pt, +5pt, and +6pt.</p>
+</section>
+
+<!-- OAG <hr> DIVIDER -->
+<h3>&lt;hr&gt; divider</h3>
+<hr class="mt-0">
+
+<!-- OAG LEAD -->
+<h3>Lead</h3>
+<p class="lead">Lorem ipsum dolor sit amet, consec adipiscing elit, sed eiusmod tempa incididunt ut labore et dolore magna aliqua . Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
 
 <h3>Blockquote</h3>
 <figure>
@@ -84,7 +95,304 @@ layout: default
 &lt;/details></code></pre>
 </details>
 
-<h2 id="buttons">Buttons</h2>
+
+<h2 class="oag-timber-wolf" id="colors">Colors</h2>
+<!-- OAG COLOR ADJUSTMENTS -->
+<h3>Color classes</h2>
+<p>Tested for AA contrast using large text (shown here using heading 4).</p>
+<div class="row">
+    <div class="col-md-4">
+        <h4 class="oag-purple-trillium">Purple Trillium</h4>
+		<h4 class="oag-fallen-leaves">Fallen Leaves</h4>
+		<h4 class="oag-lakeside-daisy bg-dark p-1">Lakeside Daisy</h4>
+		<h4 class="oag-lakeside-daisy-darker">Lakeside Daisy (darker shade)</h4>
+		<h4 class="oag-arctic-water">Arctic Water</h4>
+    </div>
+    <div class="col-md-4">
+        <h4 class="oag-lichen bg-dark p-1">Lichen</h4>
+		<h4 class="oag-lichen-darker">Lichen (darker shade)</h4>
+		<h4 class="oag-mountain-lion bg-dark p-1">Mountain Lion</h4>
+		<h4 class="oag-canadian-Rockies">Canadian Rockies</h4>
+		<h4 class="oag-timber-wolf">Timber Wolf</h4>
+    </div>
+    <div class="col-md-4">
+		<h4 class="oag-barn-swallow bg-dark p-1">Barn Swallow</h4>
+		<h4 class="oag-barn-swallow-darker">Barn Swallow (darker shade)</h4>
+		<h4 class="oag-monarch-butterfly">Monarch Butterfly</h4>
+		<h4 class="oag-aged-parchment bg-dark p-1">Aged Parchment</h4>
+    </div>
+</div>
+
+<!-- OAG BG COLOR ADJUSTMENTS -->
+<h3 class="mt-4">Background color classes</h2>
+<p>Tested for AA contrast using large text (shown here using heading 4).</p>
+<div class="row">
+    <div class="col-md-4">
+        <h4 class="oag-bg-purple-trillium text-white p-1">Purple Trillium</h4>
+		<h4 class="oag-bg-fallen-leaves text-white p-1">Fallen Leaves</h4>
+		<h4 class="oag-bg-lakeside-daisy p-1">Lakeside Daisy</h4>
+		<h4 class="oag-bg-lakeside-daisy-darker text-white p-1">Lakeside Daisy (darker shade)</h4>
+		<h4 class="oag-bg-arctic-water text-white p-1">Arctic Water</h4>
+    </div>
+    <div class="col-md-4">
+        <h4 class="oag-bg-lichen p-1">Lichen</h4>
+		<h4 class="oag-bg-lichen-darker text-white p-1">Lichen (darker shade)</h4>
+		<h4 class="oag-bg-mountain-lion p-1">Mountain Lion</h4>
+		<h4 class="oag-bg-canadian-Rockies text-white p-1">Canadian Rockies</h4>
+		<h4 class="oag-bg-timber-wolf text-white p-1">Timber Wolf</h4>
+    </div>
+    <div class="col-md-4">
+		<h4 class="oag-bg-barn-swallow p-1">Barn Swallow</h4>
+		<h4 class="oag-bg-barn-swallow-darker text-white p-1">Barn Swallow (darker shade)</h4>
+		<h4 class="oag-bg-monarch-butterfly text-white p-1">Monarch Butterfly</h4>
+		<h4 class="oag-bg-aged-parchment p-1">Aged Parchment</h4>		
+    </div>
+</div>
+
+
+<!-- OAG TABLE -->
+<h2 class="oag-timber-wolf" id="table">Table</h2>
+<table class="table table-bordered table-responsive mrgn-tp-lg">
+  <thead>
+   <tr>
+	 <th scope="col" class="col-md-1"></th>
+	 <th scope="col" class="col-md-2">Column1</th>
+	 <th scope="col" class="col-md-3">Column2</th>
+	 <th scope="col" class="col-md-3">Column3</th>
+	 <th scope="col" class="col-md-3">Column4</th>
+   </tr>
+		<tr class="oag-sub-thead">
+			<td></td>
+			<td>SecondaryColumn1</td>
+			<td>SecondaryColumn2</td>
+			<td>SecondaryColumn3</td>
+			<td>SecondaryColumn4</td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Row1</td>
+			<td>Row1Column1</td>
+			<td>Row1Column2</td>
+			<td>Row1Column3</td>
+			<td>Row1Column4</td>
+		</tr>
+		<tr>
+			<td>Row2</td>
+			<td>Row2Column1</td>
+			<td>Row2Column2</td>
+			<td>Row2Column3</td>
+			<td>Row2Column4</td>
+		</tr>
+		<tr>
+			<td>Row3</td>
+			<td>Row3Column1</td>
+			<td>Row3Column2</td>
+			<td>Row3Column3</td>
+			<td>Row3Column4</td>
+		</tr>
+       <!-- OAG ROW DIVIDER -->
+		<tr class="oag-row-divider">
+			<td>Row4</td>
+			<td>Row4Column1</td>
+			<td>Row4Column2</td>
+			<td>Row4Column3</td>
+			<td>Row4Column4</td>
+		</tr>
+		<tr>
+			<td>Row5</td>
+			<td>Row5Column1</td>
+			<td>Row5Column2</td>
+			<td>Row5Column3</td>
+			<td>Row5Column4</td>
+		</tr>
+		<tr>
+			<td>Row6</td>
+			<td>Row6Column1</td>
+			<td>Row6Column2</td>
+			<td>Row6Column3</td>
+			<td>Row6Column4</td>
+		</tr>
+	</tbody>
+</table>
+
+
+<!-- OAG ACCORDION/TOGGLE -->
+<h2 class="oag-timber-wolf" id="toggle">Accordion/Toggle</h2>
+<div class="accordion">
+	<details class="acc-group mrgn-bttm-md">
+		<summary class="wb-toggle tgl-tab" data-toggle='{"parent": ".accordion", "group": ".acc-group"}'>Toggle&nbsp;1</summary>
+		<div class="tgl-panel">
+			<p class="mrgn-tp-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		</div>
+	</details>
+	<details class="acc-group mrgn-bttm-md">
+		<summary class="wb-toggle tgl-tab" data-toggle='{"parent": ".accordion", "group": ".acc-group"}'>Toggle&nbsp;2</summary>
+		<div class="tgl-panel">
+			<p class="mrgn-tp-lg">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</div>
+	</details>
+	<details class="acc-group mrgn-bttm-md">
+		<summary class="wb-toggle tgl-tab" data-toggle='{"parent": ".accordion", "group": ".acc-group"}'>Toggle&nbsp;3</summary>
+		<div class="tgl-panel">
+			<p class="mrgn-tp-lg">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+		</div>
+	</details>
+</div>
+
+
+<!-- OAG WELL -->
+<h2 class="oag-timber-wolf" id="well">Well</h2>
+<div class="row wb-eqht">
+	<div class="col-md-4">
+		<div class="well mrgn-tp-lg">
+			<h4 class="mrgn-tp-0">Default Well&nbsp;1</h4>
+				<p>Lorem ipsum dolor sit amet, consec adipiscing elit, sed eiusmod tempa incididunt.</p>
+		</div>
+    </div>
+	<div class="col-md-4">
+		<div class="well mrgn-tp-lg">
+			<h4 class="mrgn-tp-0">Default Well&nbsp;2</h4>
+				<p>Lorem ipsum dolor sit amet, consec adipiscing elit, sed eiusmod tempa incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+		</div>
+    </div>
+	<div class="col-md-4">
+		<div class="well mrgn-tp-lg">
+			<h4 class="mrgn-tp-0">Default Well&nbsp;3</h4>
+				<p>Lorem ipsum dolor sit amet, consec adipiscing elit, sed eiusmod tempa incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+		</div>
+    </div>
+</div>
+
+<div class="row" style="flex-flow: row wrap; display: flex;">
+	<div class="col-md-4">
+		<div class="well oag-well-white mrgn-tp-lg" style="width: 100%; height: 85%; display: inline-block;">
+			<h4 class="mrgn-tp-0">White BG Well&nbsp;1</h4>
+				<p>Lorem ipsum dolor sit amet, consec adipiscing elit, sed eiusmod tempa incididunt.</p>
+		</div>
+    </div>
+	<div class="col-md-4">
+		<div class="well oag-well-white mrgn-tp-lg" style="width: 100%; height: 85%; display: inline-block;">
+			<h4 class="mrgn-tp-0">White BG Well&nbsp;2</h4>
+				<p>Lorem ipsum dolor sit amet, consec adipiscing elit, sed eiusmod tempa incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+		</div>
+    </div>
+	<div class="col-md-4">
+		<div class="well oag-well-white mrgn-tp-lg" style="width: 100%; height: 85%; display: inline-block;">
+			<h4 class="mrgn-tp-0">White BG Well&nbsp;3</h4>
+				<p>Lorem ipsum dolor sit amet, consec adipiscing elit, sed eiusmod tempa incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+		</div>
+    </div>
+</div>
+
+
+<div class="row" style="flex-flow: row wrap; display: flex;">
+	<div class="col-md-4">
+		<div class="well oag-well-primary mrgn-tp-lg" style="width: 100%; height: 85%; display: inline-block;">
+			<h4 class="mrgn-tp-0" style="color: #fff;">Primary Well&nbsp;1</h4>
+				<p>Lorem ipsum dolor sit amet, consec adipiscing elit, sed eiusmod tempa incididunt.</p>
+		</div>
+    </div>
+	<div class="col-md-4">
+		<div class="well oag-well-primary mrgn-tp-lg" style="width: 100%; height: 85%; display: inline-block;">
+			<h4 class="mrgn-tp-0" style="color: #fff;">Primary Well&nbsp;2</h4>
+				<p>Lorem ipsum dolor sit amet, consec adipiscing elit, sed eiusmod tempa incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+		</div>
+    </div>
+	<div class="col-md-4">
+		<div class="well oag-well-primary mrgn-tp-lg" style="width: 100%; height: 85%; display: inline-block;">
+			<h4 class="mrgn-tp-0" style="color: #fff;">Primary Well&nbsp;3</h4>
+				<p>Lorem ipsum dolor sit amet, consec adipiscing elit, sed eiusmod tempa incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+		</div>
+    </div>
+</div>
+
+
+<!-- OAG PANEL -->
+<h2 class="oag-timber-wolf" id="panel">Panel</h2>
+<div class="row wb-eqht">
+	<div class="col-md-4">
+		<section class="panel panel-default mrgn-tp-lg">
+		<header class="panel-heading">
+			<h4 class="panel-title">Default Panel&nbsp;1</h4>
+		</header>
+			<div class="panel-body">
+				<p>Lorem ipsum dolor sit amet, consec adipiscing elit, sed eiusmod tempa incididunt.</p>
+			</div>
+		</section>
+    </div>
+	<div class="col-md-4">
+		<section class="panel panel-default mrgn-tp-lg">
+		<header class="panel-heading">
+			<h4 class="panel-title">Default Panel&nbsp;2</h4>
+		</header>
+			<div class="panel-body">
+				<p>Lorem ipsum dolor sit amet, consec adipiscing elit, sed eiusmod tempa incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			</div>
+		</section>
+    </div>
+	<div class="col-md-4">
+		<section class="panel panel-default mrgn-tp-lg">
+		<header class="panel-heading">
+			<h4 class="panel-title">Default Panel&nbsp;3</h4>
+		</header>
+			<div class="panel-body">
+				<p>Lorem ipsum dolor sit amet, consec adipiscing elit, sed eiusmod tempa incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+			</div>
+		</section>
+    </div>
+</div>
+
+
+<div class="row" style="flex-flow: row wrap; display: flex;">
+	<div class="col-md-4">
+		<section class="panel panel-primary mrgn-tp-lg" style="width: 100%; height: 85%; display: inline-block;">
+		<header class="panel-heading">
+			<h4 class="panel-title">Primary Panel&nbsp;1</h4>
+		</header>
+			<div class="panel-body">
+				<p>Lorem ipsum dolor sit amet, consec adipiscing elit, sed eiusmod tempa incididunt.</p>
+			</div>
+		</section>
+    </div>
+	<div class="col-md-4">
+		<section class="panel panel-primary mrgn-tp-lg" style="width: 100%; height: 85%; display: inline-block;">
+		<header class="panel-heading">
+			<h4 class="panel-title">Primary Panel&nbsp;2</h4>
+		</header>
+			<div class="panel-body">
+				<p>Lorem ipsum dolor sit amet, consec adipiscing elit, sed eiusmod tempa incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			</div>
+		</section>
+    </div>
+	<div class="col-md-4">
+		<section class="panel panel-primary mrgn-tp-lg" style="width: 100%; height: 85%; display: inline-block;">
+		<header class="panel-heading">
+			<h4 class="panel-title">Primary Panel&nbsp;3</h4>
+		</header>
+			<div class="panel-body">
+				<p>Lorem ipsum dolor sit amet, consec adipiscing elit, sed eiusmod tempa incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+			</div>
+		</section>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="oag-timber-wolf" id="buttons">Buttons</h2>
 <section>
 	<h3>Regular</h3>
 	<p><a href="#" class="btn btn-primary">Primary</a> <a href="#" class="btn btn-default">Default</a> <a href="#" class="btn btn-link">Link</a></p>
@@ -108,7 +416,7 @@ layout: default
 </details>
 
 
-<h2 id="alerts">Notices (was alerts)</h2>
+<h2 class="oag-timber-wolf" id="alerts">Notices (was alerts)</h2>
 <section class="alert alert-info">
 	<h3>Info alert</h3>
 	<p>Alert details.</p>
@@ -132,7 +440,7 @@ layout: default
 </details>
 
 
-<h2 id="labels">Labels</h2>
+<h2 class="oag-timber-wolf" id="labels">Labels</h2>
 <p><span class="label label-default">Default label</span></p>
 <p><span class="label label-primary">Primary label</span></p>
 <p><span class="label label-default" data-report-type="auditor-general-reports">Auditor general reports label</span></p>
@@ -150,7 +458,7 @@ layout: default
 </code></pre>
 </details>
 
-<h2 id="tabbed-interface">Tabbed interface - vertical variant</h2>
+<h2 class="oag-timber-wolf" id="tabbed-interface">Tabbed interface - vertical variant</h2>
 <p>With session storage to remember last tab viewed. </p>
 <div class="wb-tabs vertical">
 	<div class="tabpanels">
@@ -194,7 +502,7 @@ layout: default
 &lt;/div></code></pre>
 </details>
 
-<h2 id="cards">Default card</h2>
+<h2 class="oag-timber-wolf" id="cards">Default card</h2>
 <article class="oag-card">
 	<h3 class="mb-3"><a href="#">Lorem ipsum dolor sit amet</a></h3>
 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam modi, ipsum sit adipisci expedita repellendus minus quidem maxime praesentium repellat.</p>
@@ -293,7 +601,7 @@ layout: default
 &lt;/article></code></pre>
 </details>
 
-<h2 id="pagination">Pagination</h2>
+<h2 class="oag-timber-wolf" id="pagination">Pagination</h2>
 <ul class="wb-paginate provisional">
 	<li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, at!</li>
 	<li>Soluta maiores deserunt fugit dolorum ratione cum necessitatibus dolore ipsum?</li>
@@ -334,7 +642,7 @@ layout: default
 &lt;/ul></code></pre>
 </details>
 
-<h2 id="download">Download link</h2>
+<h2 class="oag-timber-wolf" id="download">Download link</h2>
 <h3>Default</h3>
 <a class="gc-dwnld" href="#" download>
 	<img src="https://dummyimage.com/200x200" alt="" />
@@ -372,7 +680,7 @@ layout: default
 &lt;/a></code></pre>
 </details>
 
-<h2 id="existing-utilities">Existing utilities</h2>
+<h2 class="oag-timber-wolf" id="existing-utilities">Existing utilities</h2>
 <h3><code>.lead</code></h3>
 <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 <p>Note: the lead class font-size will change depending of the view port: xsmall, small medium and large </p>
@@ -411,7 +719,7 @@ layout: default
 	<pre><code>&lt;div class="bg-light p-4">&lt;/div></code></pre>
 </details>
 
-<h2 id="oag-utilities">OAG specific utilities</h2>
+<h2 class="oag-timber-wolf" id="oag-utilities">OAG specific utilities</h2>
 <h3><code>.oag-rds</code></h3>
 <div class="bg-light oag-rds p-4">
 	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, nisi?</p>

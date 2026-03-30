@@ -1,0 +1,20 @@
+/**** OAG FONT INLINE CSS FIXES ****
+* This file contains temporary CSS classes to replace the inline CSS added with font tags.
+* DO NOT USE these classes in the future, as they are only meant to be used for the current font tag fixes.
+*/
+
+.tmp-fx-charcoal {
+	color: #2d3237!important;
+}
+
+.tmp-fx-fs-08em {
+	font-size: 0.8em!important;
+}
+
+.tmp-fx-black {
+	color: black!important;
+}
+
+.tmp-fx-purple-trillium {
+	color: #4a1031!important;
+}
